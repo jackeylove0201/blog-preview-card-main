@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.inner-main {
+    background-color: hsl(47, 88%, 63%);
+    padding: 20px; /* Default padding for all screen sizes */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inner-box {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    padding: 18px 22px;
+    border-radius: 22px;
+    border: 1px solid #333;
+    box-shadow: #000003 3px 3px, 
+                #000003 5px 5px, 
+                #000003 8px 7px, 
+                #000003 8px 8px, 
+                #000003 8px 8px;
+}
+
+.inner-image {
+    display: flex;
+}
+
+.inner-image img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.inner-content {
+    margin-top: 24px;
+}
+
+.inner-content span {
+    font-size: 15px;
+    padding: 5px;
+    background-color: #F7D351;
+    border-radius: 2px;
+}
+
+.inner-content .inner-time {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 17px;
+}
+
+.inner-content .inner-title {
+    font-size: 20px;
+}
+
+.inner-content .inner-p {
+    font-size: 13px;
+    color: #A7A7A7;
+}
+
+.inner-content .inner-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-content .inner-name img {
+    width: 30px;
+}
+
+.inner-content .inner-name b {
+    font-size: 13px;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 375) {
+       .inner-main{
+        padding: 15px;
+       }
+       .container{
+        padding: 0;
+       }
+       .inner-box{
+        width: 91%;
+        max-width: 500px;
+       }
+    
+}
+
+/* Tablets and smaller desktops */
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+    .inner-main {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .inner-box {
+        width: 70%;
+        max-width: 600px;
+    }
+}
+
+/* Larger desktops */
+@media screen and (min-width: 1025px) {
+    .inner-main {
+        padding: 100px;
+    }
+
+    .container {
+        padding: 50px;
+    }
+
+    .inner-box {
+        width: 30%;
+        max-width: 400px;
+    }
+}
